@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <title>Website của trường THPT Triệu Sơn 1</title>
+    <style>
+        .container {
+            position: relative;
+            display: flex;
+            background: url(https://scontent.fthd2-4.fna.fbcdn.net/v/t39.30808-6/308862075_521643279967594_7642477726713236942_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEMsMqmMk9z0hAlGtlEnHyo5D74kZlsU_LkPviRmWxT8idlo-VXZ1SxsIV-qr3Ujh13hT9Ng3gdaYGIxZ4__7Bg&_nc_ohc=Lof8pZkmac4Q7kNvgEOdkyc&_nc_oc=AdjePEAY_azGazn83_0d_ac65yN8vTfrDmXePVGSHfwNVVV5y3a5XNo1dRJkgRPegzo&_nc_zt=23&_nc_ht=scontent.fthd2-4.fna&_nc_gid=AO_Bb1O1tQ0L0rT0E5P-4tr&oh=00_AYBT0biUAMe_-uQt7x0MKyoqwK1xfvPPk1XLnk3WxbNNcg&oe=67AF8D2D) no-repeat center/cover;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            height: 300px;
+        }
+
+        .logo img {
+            position:absolute;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+        }
+
+        .name {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+
+        .name h1 {
+            position: absolute;
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+            background: none;
+            color: white;
+            bottom: 0;
+            left: 0;
+            font-family: Playwrite VN, sans-serif;
+            font-variant: small-caps;
+        }
+
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
+        .nav {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            background-color: aquamarine;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav ul li {
+            margin: 0 10px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .nav ul li a:hover {
+            color: rgb(39, 186, 81);
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: aquamarine;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown .dropdown-menu li {
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+
+        .dropdown-menu li a:hover {
+            color: white;
+        }
+
+        .search {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .search input {
+            border: none;
+            outline: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .search button {
+            background-color: aquamarine;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        article {
+            width: 75%;
+            height: 100%;
+        }
+
+        .news {
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+        }
+
+        .news img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .news-title {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+            font-size: 24px;
+            color: black;
+        }
+
+        .news-content {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-size: 18px;
+            color: black;
+        }
+
+        aside {
+            width: 25%;
+            height: 100%;
+        }
+
+        .sidebar {
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 0 20px 20px;
+        }
+
+        .lang {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .lang li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+
+        .lang li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .lang li a:hover {
+            color: rgb(39, 186, 81);
+        }
+
+        .more {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .more li {
+            list-style-type: none;
+            margin: 10px 0;
+        }
+
+        .more li a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .more li a:hover {
+            color: rgb(39, 186, 81);
+        }
+
+        .footer {
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+            color: black;
+        }
+
+        .facebook {
+            background: radial-gradient(circle,rgb(89, 91, 231),rgb(105, 240, 255));
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .facebook a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .instagram {
+            background: radial-gradient(circle,rgb(255, 89, 89),rgb(247, 149, 149));
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .instagram a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .zalo {
+            background: radial-gradient(circle,rgb(89, 255, 89),rgb(178, 245, 178));
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .zalo a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .about {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+            font-size: 18px;
+            color: black;
+            background-color: aquamarine;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 0 20px 0;
+        }
+
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYlHGFvLDqnYWavJauQXpQR0Et9LDUnD08A&s" alt="Logo trường">
+            </div>
+            <div class="name">
+                <h1>Trường THPT Triệu Sơn 1</h1>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li class="dropdown"><a href="lienhe.html">Liên hệ</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Điện thoại</a></li>
+                            <li><a href="#">Email</a>
+                            <li><a href="#">facebook</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="phanhoi.html">Phản hồi</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="gopy.html">Góp ý</a></li>
+                            <li><a href="hoidap.html">Hỏi đáp</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <button><i class='bx bx-search'></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <article>
+            <div class="about">
+                <h2>Trường THPT Triệu Sơn 1 là một trong những ngôi trường cấp 3 có bề dày truyền thống và uy tín tại huyện Triệu Sơn, tỉnh Thanh Hóa. Dưới đây là một số thông tin nổi bật về trường:</h2><hr>
+                <p>1. Lịch sử hình thành và phát triển
+                    Trường THPT Triệu Sơn 1 được thành lập năm 1961, là một trong những trường THPT đầu tiên của huyện Triệu Sơn.
+                    
+                    Trải qua hơn 60 năm xây dựng và phát triển, trường đã khẳng định được vị thế là một trong những trường trọng điểm của tỉnh Thanh Hóa.</p><hr>
+                <p>2. Chất lượng giáo dục
+                    Trường luôn nằm trong top đầu về thành tích học tập và thi cử của tỉnh Thanh Hóa.
+                    
+                    Hàng năm, trường có nhiều học sinh đạt giải cao trong các kỳ thi học sinh giỏi cấp tỉnh, cấp quốc gia.
+                    
+                    Tỷ lệ đỗ tốt nghiệp THPT và đỗ vào các trường đại học, cao đẳng luôn ở mức cao.</p><hr>
+                <p>3. Cơ sở vật chất
+                    Trường được đầu tư cơ sở vật chất hiện đại, bao gồm:
+                    
+                    Phòng học khang trang, đầy đủ trang thiết bị dạy và học.
+                    
+                    Thư viện với nguồn tài liệu phong phú.
+                    
+                    Phòng thí nghiệm, phòng máy tính, sân chơi thể thao rộng rãi.</p><hr>
+                <p>4. Đội ngũ giáo viên
+                    Trường sở hữu đội ngũ giáo viên có trình độ chuyên môn cao, nhiệt tình và giàu kinh nghiệm.
+                    
+                    Nhiều thầy cô là giáo viên dạy giỏi cấp tỉnh, cấp quốc gia.</p><hr>
+                <p>5. Hoạt động ngoại khóa
+                    Trường thường xuyên tổ chức các hoạt động ngoại khóa, văn nghệ, thể thao để phát triển toàn diện kỹ năng cho học sinh.
+                    
+                    Các câu lạc bộ học thuật, tình nguyện cũng được quan tâm và phát triển.</p><hr>
+                <p>6. Thành tích nổi bật
+                    Nhiều năm liền đạt danh hiệu Tập thể Lao động Xuất sắc.
+                    
+                    Được công nhận là trường đạt chuẩn Quốc gia.
+                    
+                    Nhiều học sinh của trường đã thành đạt và đóng góp cho xã hội.</p><hr>
+                <p>7. Phương châm giáo dục
+                    Trường THPT Triệu Sơn 1 luôn hướng tới mục tiêu "Dạy chữ - Dạy người - Dạy nghề", đào tạo thế hệ học sinh không chỉ giỏi kiến thức mà còn có đạo đức tốt và kỹ năng sống toàn diện.</p>
+            </div>
+        </article>
+        
+        <aside>
+            <div class="sidebar">
+                <h2>Ngôn ngữ</h2>
+                <div class="lang">
+                    <ul>
+                        <li><a href="#">Tiếng Việt</a></li>
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">中文</a></li>
+                        <li><a href="#">日本語</a></li>
+                        <li><a href="#">한국어</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="sidebar">
+                <h2>Liên kết</h2>
+                <ul class="more">
+                    <li><a href="#">Thư viện trường</a></li>
+                    <li><a href="#">Học bổng</a></li>
+                    <li><a href="#">Tuyển sinh</a></li>
+                    <li><a href="#">Điểm thi</a></li>
+                    <li><a href="#">Học phí</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.242867995653!2d105.6042552!3d19.8296741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3136f006696a74fd%3A0x6cb75367c0b4d147!2zVHLGsOG7nW5nIFRIUFQgVHJp4buHdSBTxqFuIDE!5e0!3m2!1svi!2s!4v1739180161237!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="sidebar">
+                <h2>Theo dõi chúng tôi trên:</h2>
+                <button class="facebook"><a href="#">Facebook</a></button>
+                <button class="instagram"><a href="#">Instagram</a></button>
+                <button class="zalo"><a href="#">Zalo</a></button>
+            </div>
+        </aside>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 THPT Triệu Sơn 1. All rights reserved.</p>
+    </div>
+</body>
+</html>
