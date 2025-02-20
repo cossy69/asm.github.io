@@ -25,6 +25,7 @@
             height: 200px;
             top: 0;
             left: 0;
+            border-radius: 100px;
         }
 
         .name {
@@ -40,9 +41,9 @@
             animation: marquee 15s linear infinite;
             background: none;
             color: white;
-            bottom: 0;
+            bottom: 10px;
             left: 0;
-            font-family: Playwrite VN, sans-serif;
+            font-family: 'Be Vietnam Pro', sans-serif;
             font-variant: small-caps;
         }
 
@@ -293,20 +294,20 @@
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCYlHGFvLDqnYWavJauQXpQR0Et9LDUnD08A&s" alt="Logo trường">
             </div>
             <div class="name">
-                <h1>Trường THPT Triệu Sơn 1</h1>
+                <h1>"Trường THPT Triệu Sơn 1 - Nơi ươm mầm tài năng, kiến tạo tương lai"</h1>
             </div>
             <div class="nav">
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="gioithieu.html">Giới thiệu</a></li>
-                    <li class="dropdown"><a href="lienhe.html">Liên hệ</a>
+                    <li class="dropdown"><a href="#">Liên hệ</a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Điện thoại</a></li>
-                            <li><a href="#">Email</a>
-                            <li><a href="#">facebook</a></li>
+                            <li><a href="#">Điện thoại: 0123456789</a></li>
+                            <li><a href="#">Email: thptts1@gmail.com</a>
+                            <li><a href="#">Facebook: ;facebook link;</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="phanhoi.html">Phản hồi</a>
+                    <li class="dropdown"><a href="#">Phản hồi</a>
                         <ul class="dropdown-menu">
                             <li><a href="gopy.html">Góp ý</a></li>
                             <li><a href="hoidap.html">Hỏi đáp</a></li>
@@ -314,8 +315,10 @@
                     </li>
                 </ul>
                 <div class="search">
-                    <input type="text" placeholder="Tìm kiếm...">
-                    <button><i class='bx bx-search'></i></button>
+                    <form action="https://www.google.com.vn/search" method="get">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button><i class='bx bx-search'></i></button>
+                    </form>
             </div>
         </div>
     </header>

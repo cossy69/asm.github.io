@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"html.format.indentInnerHtml": true,
+		"liveServer.settings.multiRootWorkspaceName": "Web"
+	}
+}
