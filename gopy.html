@@ -286,19 +286,62 @@
             font-variant: small-caps;
         }
 
-        .about {
+        .feedback {
+            background-color: none;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form label {
             font-family: 'Be Vietnam Pro', sans-serif;
             font-variant: small-caps;
             font-size: 18px;
             color: black;
-            background-color: aquamarine;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 0 0 20px 0;
         }
 
-        hr {
-            border: 1px solid black;
+        .form input {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form textarea {
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: rgb(39, 186, 81);
+            color: white;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+        }
+
+        .form button:hover {
+            background-color: rgb(89, 255, 89);
+        }
+
+        .feedback h2 {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            font-variant: small-caps;
+            font-size: 24px;
+            color: black;
+            text-align: center;
         }
     </style>
 </head>
@@ -315,7 +358,7 @@
                 <ul>
                     <li><a href="index.html">Trang chủ</a></li>
                     <li><a href="gioithieu.html">Giới thiệu</a></li>
-                    <li class="dropdown"><a href="lienhe.html">Liên hệ</a>
+                    <li class="dropdown"><a href="#">Liên hệ</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Điện thoại: 0123456789</a></li>
                             <li><a href="#">Email: thptts1@gmail.com</a>
@@ -337,42 +380,22 @@
     </header>
     <div class="content">
         <article>
-            <div class="about">
-                <h2>Trường THPT Triệu Sơn 1 là một trong những ngôi trường cấp 3 có bề dày truyền thống và uy tín tại huyện Triệu Sơn, tỉnh Thanh Hóa. Dưới đây là một số thông tin nổi bật về trường:</h2><hr>
-                <p>1. Lịch sử hình thành và phát triển
-                    Trường THPT Triệu Sơn 1 được thành lập năm 1961, là một trong những trường THPT đầu tiên của huyện Triệu Sơn.
-                    
-                    Trải qua hơn 60 năm xây dựng và phát triển, trường đã khẳng định được vị thế là một trong những trường trọng điểm của tỉnh Thanh Hóa.</p><hr>
-                <p>2. Chất lượng giáo dục
-                    Trường luôn nằm trong top đầu về thành tích học tập và thi cử của tỉnh Thanh Hóa.
-                    
-                    Hàng năm, trường có nhiều học sinh đạt giải cao trong các kỳ thi học sinh giỏi cấp tỉnh, cấp quốc gia.
-                    
-                    Tỷ lệ đỗ tốt nghiệp THPT và đỗ vào các trường đại học, cao đẳng luôn ở mức cao.</p><hr>
-                <p>3. Cơ sở vật chất
-                    Trường được đầu tư cơ sở vật chất hiện đại, bao gồm:
-                    
-                    Phòng học khang trang, đầy đủ trang thiết bị dạy và học.
-                    
-                    Thư viện với nguồn tài liệu phong phú.
-                    
-                    Phòng thí nghiệm, phòng máy tính, sân chơi thể thao rộng rãi.</p><hr>
-                <p>4. Đội ngũ giáo viên
-                    Trường sở hữu đội ngũ giáo viên có trình độ chuyên môn cao, nhiệt tình và giàu kinh nghiệm.
-                    
-                    Nhiều thầy cô là giáo viên dạy giỏi cấp tỉnh, cấp quốc gia.</p><hr>
-                <p>5. Hoạt động ngoại khóa
-                    Trường thường xuyên tổ chức các hoạt động ngoại khóa, văn nghệ, thể thao để phát triển toàn diện kỹ năng cho học sinh.
-                    
-                    Các câu lạc bộ học thuật, tình nguyện cũng được quan tâm và phát triển.</p><hr>
-                <p>6. Thành tích nổi bật
-                    Nhiều năm liền đạt danh hiệu Tập thể Lao động Xuất sắc.
-                    
-                    Được công nhận là trường đạt chuẩn Quốc gia.
-                    
-                    Nhiều học sinh của trường đã thành đạt và đóng góp cho xã hội.</p><hr>
-                <p>7. Phương châm giáo dục
-                    Trường THPT Triệu Sơn 1 luôn hướng tới mục tiêu "Dạy chữ - Dạy người - Dạy nghề", đào tạo thế hệ học sinh không chỉ giỏi kiến thức mà còn có đạo đức tốt và kỹ năng sống toàn diện.</p>
+            <div class="feedback">
+                <h2>Phản hồi của bạn rất quan trọng đối với chúng tôi:</h2>
+                <div class="form">
+                    <form action="gopy.php" method="post">
+                        <label for="name">Họ và tên:</label><br>
+                        <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="phone">Số điện thoại:</label><br>
+                        <input type="tel" id="phone" name="phone" required><br>
+                        <label for="content">Nội dung:</label><br>
+                        <textarea id="content" name="content" required></textarea><br>
+                        <button type="submit">Gửi</button>
+                        <button type="reset">Nhập lại</button>
+                    </form>
+                </div>
             </div>
         </article>
         

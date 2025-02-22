@@ -149,13 +149,13 @@
         article {
             width: 75%;
             height: 100%;
+            border-radius: 10px;
+            background-color: aquamarine;
         }
 
         .news {
-            background-color: aquamarine;
             padding: 20px;
-            border-radius: 10px;
-            margin: 0 0 20px 0;
+            margin: 0 0 0 0;
         }
 
         .news img {
@@ -285,6 +285,28 @@
             font-family: 'Be Vietnam Pro', sans-serif;
             font-variant: small-caps;
         }
+
+        .more-btn {
+            background-color: aquamarine;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .more-btn:hover {
+            background-color: rgb(39, 186, 81);
+        }
+
+        .more-text {
+            display: none;
+        }
+
+        .more-text.show {
+            display: block;
+        }
+
+
     </style>
 </head>
 <body>
@@ -318,24 +340,27 @@
                     <form action="https://www.google.com.vn/search" method="get">
                         <input type="text" placeholder="Tìm kiếm...">
                         <button><i class='bx bx-search'></i></button>
-                    </form>
+                </form>
             </div>
         </div>
     </header>
     <div class="content">
         <article>
+            
             <div class="news">
                 <img src="https://scontent.fthd2-4.fna.fbcdn.net/v/t39.30808-6/475172226_1171927861605796_7310855200445347090_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhpT4DOr8WuEv9mEmDHM5xZn-KursZd6Nmf4q6uxl3oyn24NrxMtSKrWAzXVMo82WXtWicD47AfQO-HoNI_OY-&_nc_ohc=ONGXOYewXIwQ7kNvgEmp87g&_nc_oc=AdiRV6mcPMH9lHB3P8cFJxkJStuGtHlftUJiROpiXIBhapgGF2BvK0JQjiJVlloPq0w&_nc_zt=23&_nc_ht=scontent.fthd2-4.fna&_nc_gid=AUt4SIWOlhHYWgGCS2ZTWf0&oh=00_AYDI4Ms2VGO3UHiGQdnCcBSYNLA5ceDDDt9MVd0Dk-5JTA&oe=67AFAA24" alt="Hình ảnh">
                 <h2 class="news-title">Gặp mặt đầu năm.</h2>
-                <p class="news-content">Sáng ngày 26 tháng 01 năm 2025 (tức ngày 27 tháng 12 năm Giáp thìn), trong không khí đón chào năm mới Ất Tỵ - 2025, “Mừng Đảng, mừng xuân, mừng đất nước đổi”, trường THPT Triệu Sơn 1 đã long trọng tổ chức buổi “Gặp mặt tất niên” nhằm gặp gỡ, kết nối các thế hệ nhà giáo, các thế hệ cựu học sinh, kết nối vòng tay lớn, hướng tới kỷ niệm 60 năm thành lập trường THPT Triệu Sơn 1 vào tháng 11 năm 2025.
+                <div class="more-text"><p class="news-content">Sáng ngày 26 tháng 01 năm 2025 (tức ngày 27 tháng 12 năm Giáp thìn), trong không khí đón chào năm mới Ất Tỵ - 2025, “Mừng Đảng, mừng xuân, mừng đất nước đổi”, trường THPT Triệu Sơn 1 đã long trọng tổ chức buổi “Gặp mặt tất niên” nhằm gặp gỡ, kết nối các thế hệ nhà giáo, các thế hệ cựu học sinh, kết nối vòng tay lớn, hướng tới kỷ niệm 60 năm thành lập trường THPT Triệu Sơn 1 vào tháng 11 năm 2025.
                     Nhà trường rất vinh dự, vui mừng và tự hào khi được đón tiếp đồng chí Lê Quang Trung – Phó Bí thư thường trực huyện ủy Triệu Sơn (là cựu học sinh niên khóa 1982-1985), đồng chí Lê Phú Quốc – huyện ủy viên, Phó Chủ tịch UBND huyện Triệu Sơn (là cựu học sinh niên khóa 2000-2003), anh Lê Xuân Quế - Phó TGĐ Tập đoàn Sao Mai (là cựu học sinh niên khóa 1983-1986), các anh chị hiện đang là người lãnh đạo, quản lý các đơn vị, tổ chức, doanh nghiệp… về tham dự buổi gặp mặt.
                     Trong không gian ấm cúng, ân tình ấy nhà trường đã tiếp nhận được rất nhiều ý kiến đóng góp quý báu từ các thế hệ nhà giáo, các anh chị cựu học sinh,  sự ủng hộ cả về vật chất và tinh thần của rất nhiều tập thể các lớp, các khóa học và cá nhân. Những món quà khởi đầu đầy ý nghĩa này sẽ là động lực tiếp nguồn thêm sức mạnh, niềm tin cho nhà trường trong quá trình phát triển và khẳng định vị thế, thương hiệu của trường THPT Triệu Sơn 1 đồng thời góp phần to lớn tạo nên sự thành công của Lễ kỷ niệm 60 năm thành lập trường.
                     Trường THPT Triệu Sơn 1, xin trân trọng cảm ơn tất cả các thế hệ nhà giáo, các thế hệ học sinh đã về dự buổi gặp mặt, ủng hộ cả về vật chất và tinh thần, luôn hướng về nhà trường trong suốt thời gian qua và đặc biệt là quá trình chuẩn bị, tiến tới kỉ niệm 60 năm  thành lập trường.</p>
+                </div>
+                <button class="more-btn" onclick="showMore()">Xem thêm</button>
             </div>
             <div class="news">
                 <img src="https://scontent.fthd2-4.fna.fbcdn.net/v/t39.30808-6/474823503_1168893428575906_244005875746481774_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHbVQaQCvsHudaR-y7ZXmmJnEOnqyflkwWcQ6erJ-WTBVr-2sefoaeaOoRcKWBsQ3MAx6UY9rLcoXFxbrSohYnl&_nc_ohc=jq1P_oTOnHoQ7kNvgGL99Kk&_nc_oc=AdgUFOG4LnEjnn81NRULLJRSTLe8dtDboC5gsCm5LVFQW6gKiMvrZ7DbmWzLlanKCS0&_nc_zt=23&_nc_ht=scontent.fthd2-4.fna&_nc_gid=AjNcjX7WSaAEUMD8bb1Hwuc&oh=00_AYDFaKtDWAsJH-HIfJMlPwR5uIo1ph_7bZt0lNhHULuKZg&oe=67AF7E44" alt="Hình ảnh">
                 <h2 class="news-title">Sơ kết học kì.</h2>
-                <p class="news-content">Sáng ngày 21, trường THPT Triệu Sơn 1 long trọng tổ chức Lễ sơ kết học kì 1, vinh danh trao thưởng cho giáo viên và học sinh trong kỳ thi học sinh giỏi cấp tỉnh năm học 2024- 2025 và trao quà tết sum vầy, xuân ơn Đảng năm 2025.
+                <div class="more-text"><p class="news-content">Sáng ngày 21, trường THPT Triệu Sơn 1 long trọng tổ chức Lễ sơ kết học kì 1, vinh danh trao thưởng cho giáo viên và học sinh trong kỳ thi học sinh giỏi cấp tỉnh năm học 2024- 2025 và trao quà tết sum vầy, xuân ơn Đảng năm 2025.
                     Lễ sơ kết học kì 1 năm học 2024 - 2025 là một dịp quan trọng để nhìn lại những kết quả đã đạt được và hướng đến kỷ niệm 60 năm thành lập trường.
                     ⭐️Những điểm sáng ấn tượng trong học kì vừa qua mà thầy cô và học sinh trong nhà trường gặt hái được:
                - Nhà trường được Chủ tịch UBND tỉnh tặng Bằng khen.
@@ -343,24 +368,30 @@
                - Nhà trường đã trao 53 phần quà “Tết sum vầy” cho học sinh có hoàn cảnh khó khăn vươn lên trong học tập.
                     Chúc quý thầy cô, các bậc phụ huynh và tất cả các bạn học sinh một mùa xuân thật an lành, nhiều sức khỏe và niềm vui!🍀
                📷Dưới đây là những hình ảnh đẹp nhất được ghi nhận lại trong buổi sơ kết.</p>
+                </div>
+                <button class="more-btn" onclick="showMore()">Xem thêm</button>
             </div>
             <div class="news">
                 <img src="https://scontent.fthd2-4.fna.fbcdn.net/v/t39.30808-6/474011714_1165349632263619_9149128749528786387_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHusDUL1-GocDVA8ouxIA4bg4L9tgK-ieuDgv22Ar6J65LVUa4tSuohMnXxJHIqyARhoNsOgf80pJ1MuNUrjT4z&_nc_ohc=Zr9vOV3DqCkQ7kNvgG_Iagi&_nc_oc=Adi5UbdBG-P6kYcwT256Ip0DXxF1KwFVIrFsB5yROQedAE0GvKZh_zOE4_qGkhUEnn0&_nc_zt=23&_nc_ht=scontent.fthd2-4.fna&_nc_gid=AqghFY_JfQ10ONl-QQYJInC&oh=00_AYASa92B5TsVjbn0UZc1n-FjKPval7tUOPs24f5Z2w1R5w&oe=67AF87E4" alt="Hình ảnh">
                 <h2 class="news-title">Kỷ niệm 60 năm thành lập trường.</h2>
-                <p class="news-content">Kính gửi: - Các thế hệ nhà giáo, cán bộ, nhân viên, học sinh, phụ huynh của nhà trường;
+                <div class="more-text"><p class="news-content">Kính gửi: - Các thế hệ nhà giáo, cán bộ, nhân viên, học sinh, phụ huynh của nhà trường;
                     - Quý cơ quan, tổ chức, đơn vị, doanh nghiệp và cá nhân.
           Trường THPT Triệu Sơn 1 (tiền thân là trường Cấp 3 huyện Triệu Sơn) được thành lập năm 1965, trải qua 60 năm xây dựng và phát triển nhà trường đã đạt được những kết quả đáng tự hào được các cấp, các ngành, các thế hệ học sinh, phụ huynh và nhân dân ghi nhận.
            Hướng tới kỷ niệm 60 năm thành lập trường, trường THPT Triệu Sơn 1 trân trọng gửi đến các thế hệ nhà giáo, cán bộ, nhân viên, học sinh, phụ huynh của nhà trường; Quý cơ quan, tổ chức, đơn vị, doanh nghiệp và các cá nhân Thư ngỏ này với mong muốn tạo sự kết nối chặt chẽ, rộng rãi, cùng đồng hành với nhà trường trên mọi phương diện, hướng về mái trường THPT Triệu Sơn 1 thân yêu và góp phần làm nên thành công của Lễ kỷ niệm 60 năm thành lập trường vào các ngày 15, 16 tháng 11 năm 2025. 
              Trân trọng!</p>
             </div>
+            <button class="more-btn" onclick="showMore()">Xem thêm</button>
+            </div>
             <div class="news">
                 <img src="https://scontent.fthd2-1.fna.fbcdn.net/v/t39.30808-6/473993905_1164725688992680_2788355253991414380_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHoLtoniSGZ7U5hRBsFqJIX1hp1FoEU-cvWGnUWgRT5yy9Vkqb-zw445phTs7qvvRDXKcG6Hz7nw5INNkMFiCNI&_nc_ohc=AXMwV4v5FRkQ7kNvgF4toRS&_nc_oc=Adh4kHJDAp-EgleupwEh1m4hNDSxMNzQ85q6oL6EQ47-sdZVbTByilJPHU_iV5cWopE&_nc_zt=23&_nc_ht=scontent.fthd2-1.fna&_nc_gid=Afy-E-_YdvDvJMFnDNOLgIb&oh=00_AYDEbcB02CpiDdrSqGBD5YGALxdOOO1qrPQUdr-mhTkyKA&oe=67AFB65E" alt="Hình ảnh">
                 <h2 class="news-title">Phòng cháy chữa cháy.</h2>
-                <p class="news-content">Sáng ngày 18 tháng 1 năm 2025, Trường THPT Triệu Sơn 1  đã cùng phối hợp với Phòng Cảnh sát Phòng cháy, chữa cháy và cứu nạn cứu hộ Công an tỉnh Thanh Hoá tổ chức Hoạt động trải nghiệm, thực hành về chữa cháy và cứu nạn cứu hộ.
+                <div class="more-text"><p class="news-content">Sáng ngày 18 tháng 1 năm 2025, Trường THPT Triệu Sơn 1  đã cùng phối hợp với Phòng Cảnh sát Phòng cháy, chữa cháy và cứu nạn cứu hộ Công an tỉnh Thanh Hoá tổ chức Hoạt động trải nghiệm, thực hành về chữa cháy và cứu nạn cứu hộ.
                     Thông qua hoạt động này, các em học sinh được tiếp cận, giao lưu với những chiến sỹ cảnh sát PCCC, được quan sát và trải nghiệm công việc làm lính cứu hoả tại trụ sở Phòng Cảnh sát PCCC &CNCH và được hướng dẫn các biện pháp để phòng tránh cháy nổ, kỹ năng xử lý tình huống và kỹ năng tự bảo vệ bản thân khi có cháy nổ xảy ra.
                     Trong buổi trải nghiệm, học sinh được thực hành sử dụng bình chữa cháy dập lửa, thực hành kĩ năng thoát hiểm nhanh khi xảy ra hỏa hoạn, kĩ năng phòng chống khí độc; kĩ năng thoát hiểm từ nhà cao tầng với xe thang chuyên dụng, được trải nghiệm sử dụng vòi phun nước chuyên dụng để chữa cháy….
                     Các em học sinh rất hào hứng, phấn khởi khi được tham gia hoạt động này. Đây là một hoạt động thiết thực để giáo dục kĩ năng PCCC&CNCH cho học sinh. 
                     Chúng ta cùng nhìn lại những hình ảnh được ghi nhận tại buổi hoạt động trải nghiệm đầy ý nghĩa này 🌿</p>
+            </div>
+            <button class="more-btn" onclick="showMore()">Xem thêm</button>
             </div>
         </article>
         
@@ -404,5 +435,21 @@
     <div class="footer">
         <p>&copy; 2025 THPT Triệu Sơn 1. All rights reserved.</p>
     </div>
+    <script>
+    
+
+        // tạo event cho nút xem thêm
+        var btnText = document.getElementsByClassName("more-btn");
+        for (var i = 0; i < btnText.length; i++) {
+            btnText[i].addEventListener("click", function() {
+            var moreText = this.previousElementSibling;
+            if (moreText.style.display === "block") {
+                moreText.style.display = "none";
+            } else {
+                moreText.style.display = "block";
+            }
+            });
+        }
+    </script>
 </body>
 </html>
